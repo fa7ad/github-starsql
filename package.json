@@ -1,7 +1,8 @@
 {
   "name": "github-starsql",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://fa7ad.github.io/github-starsql",
   "dependencies": {
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.3",
@@ -17,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "eslint-config-semistandard-react": "^4.2.0",
-    "eslint-plugin-semistandard-react": "^4.1.0"
+    "eslint-plugin-semistandard-react": "^4.1.0",
+    "gh-pages": "^2.0.1"
   }
 }
