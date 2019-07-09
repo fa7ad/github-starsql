@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00db3378d88beef353af0aa7d1b9f7a2",
+    "revision": "9be59480cc1c73c6e0069b3f3e4e76a0",
     "url": "/github-starsql/index.html"
   },
   {
-    "revision": "7f9ce32e82fabfaf51f4",
+    "revision": "ecfbcee9fab4d40efc2c",
     "url": "/github-starsql/static/css/main.94ad8322.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github-starsql/static/js/2.ba9e13c7.chunk.js"
   },
   {
-    "revision": "7f9ce32e82fabfaf51f4",
-    "url": "/github-starsql/static/js/main.663f332f.chunk.js"
+    "revision": "ecfbcee9fab4d40efc2c",
+    "url": "/github-starsql/static/js/main.04404460.chunk.js"
   },
   {
     "revision": "f85ba799b0858d97e442",
