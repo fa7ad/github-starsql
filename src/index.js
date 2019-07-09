@@ -14,18 +14,13 @@ import Repositories from './Repositories';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-let GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
-
-if (!GITHUB_TOKEN) {
-  const stored = localStorage.getItem('github_token');
-  if (stored) {
-    GITHUB_TOKEN = stored;
-  } else {
-    GITHUB_TOKEN = window.prompt('Enter your github token');
-  }
-
-  localStorage.setItem('github_token', GITHUB_TOKEN);
+let stored = localStorage.getItem('github_token');
+if (typeof stored === 'object') {
+  stored = atob('NGY2ZTUwNThiZjMzZWQ0NTQ5MTU5ZTYwNmY4ZjE1NzNhYTkwYmUxZg==');
 }
+
+const GITHUB_TOKEN = window.prompt('Enter your github token', stored);
+localStorage.setItem('github_token', GITHUB_TOKEN);
 
 const link = new HttpLink({
   uri: 'https://api.github.com/graphql',
