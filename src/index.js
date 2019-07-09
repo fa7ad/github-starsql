@@ -15,7 +15,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 let stored = localStorage.getItem('github_token');
-if (typeof stored === 'object') {
+if (typeof stored !== 'string') {
   stored = atob('NGY2ZTUwNThiZjMzZWQ0NTQ5MTU5ZTYwNmY4ZjE1NzNhYTkwYmUxZg==');
 }
 
